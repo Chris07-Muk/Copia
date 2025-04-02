@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'username' => 'blockbuser',
+        'password' => 'blockpass487',
+        'database' => 'blockbuster',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

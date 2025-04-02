@@ -77,3 +77,96 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+/**
+ * Define a constant
+ * define('CONSTANT_NAME', 1000);
+ * define('CONSTANT_NAME', 'AAA' || 'A');
+ * define('CONSTANT_NAME', array());
+ * 
+ */
+
+ // app/Config/Constants.php
+define('RECURSOS_USUARIO_CSS', 'recursos_usuario/css');
+define('RECURSOS_USUARIO_JS', 'recursos_usuario/js');
+define('RECURSOS_USUARIO_IMG', 'recursos_usuario/img');
+define('RECURSOS_USUARIO_FONTS', 'recursos_usuario/fonts');
+
+ 
+
+define('RECURSOS_PANEL_ADMIN_CSS', 'recursos_panel_admin/dist/css');
+define('RECURSOS_PANEL_ADMIN_JS', 'recursos_panel_admin/dist/js');
+define('RECURSOS_PANEL_ADMIN_IMG', 'recursos_panel_admin/dist/img');
+define('RECURSOS_PANEL_ADMIN_PLUGINS', 'recursos_panel_admin/plugins');
+define('RECURSOS_PANEL_IMG_PROFILES_USER', 'images/profile_user/');
+
+
+define('MASCULINO', 1);
+define('FEMENINO', 0);
+
+define ('ESTATUS_HABILITADO', 1);
+define ('ESTATUS_DESHABILITADO', 0);
+
+define('SUCCESS_ALERT', 'success');//verde
+define('WARNING_ALERT', 'warning');//amarillo
+define('INFO_ALERT', 'info');//azul
+define('ERROR_ALERT', 'error');//rojo
+
+define('TAREA_DASHBOARD', 'tarea_dashboard');
+
+define('TAREA_USUARIOS', 'tarea_usuarios');
+define("TAREA_PLANES", "planes");
+define("TAREA_GENEROS", "generos");
+define("TAREA_STREAMING", "streaming");
+define("TAREA_VIDEOS", "videos");
+define("TAREA_PAGOS", "pagos");
+define("TAREA_USUARIOS_PLANES", "usuarios_planes");
+define("TAREA_ALQUILERES", "alquileres");
+define('TAREA_CLIENTES', 'tarea_clientes');
+
+
+// Permisos para el Administrador
+define('PERMISOS_ADMINISTRADOR', array(
+    TAREA_DASHBOARD,
+    TAREA_USUARIOS,
+    TAREA_PLANES,
+    TAREA_GENEROS,
+    TAREA_STREAMING,
+    TAREA_VIDEOS,
+    TAREA_PAGOS,
+    TAREA_USUARIOS_PLANES,
+    TAREA_ALQUILERES
+));
+
+define('PERMISOS_OPERADOR', array(
+    TAREA_DASHBOARD,
+    TAREA_CLIENTES,       
+    TAREA_PAGOS           
+));
+
+
+define('PERMISOS_CLIENTE', array(
+    TAREA_DASHBOARD,
+    TAREA_ALQUILERES,     
+    TAREA_PAGOS,         
+    TAREA_VIDEOS          
+));
+
+
+define('ROL_ADMINISTRADOR', array("clave" => 745 , "rol" => "Administrador"));
+define('ROL_OPERADOR', array("clave" => 125 , "rol" => "Operador"));
+define('ROL_CLIENTE', array("clave" => 58 , "rol" => "Cliente"));
+
+//ROLES
+define("ROLES", array(
+    ROL_ADMINISTRADOR["clave"] => ROL_ADMINISTRADOR["rol"],
+    ROL_OPERADOR["clave"] => ROL_OPERADOR["rol"],
+    ROL_CLIENTE["clave"] => ROL_CLIENTE["rol"],
+));
+
+
+
+define('RECURSOS_PANEL_BSB_JS', 'recursos_panel_bsb\js');
+define('RECURSOS_PANEL_BSB_CSS', 'recursos_panel_bsb\css');
+define('RECURSOS_PANEL_BSB_PLUGINS', 'recursos_panel_bsb\plugins');
+
